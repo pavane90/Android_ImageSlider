@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        viewPager = (ViewPager) findViewById(R.id.view);
+        viewPager = findViewById(R.id.view);
         adapter = new Adapter(this);
         viewPager.setAdapter(adapter);
     }

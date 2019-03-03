@@ -38,8 +38,7 @@ public class Adapter extends PagerAdapter {
         ImageView imageView = v.findViewById(R.id.imageView);
         TextView textView = v.findViewById(R.id.textView);
         imageView.setImageResource(images[position]);
-        position += 1;
-        textView.setText((position) + "번째 이미지 입니다.");
+        textView.setText("" + (position +1) + "번째 이미지 입니다.");
         container.addView(v);
         return v;
     }
